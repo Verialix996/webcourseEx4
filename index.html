@@ -12,7 +12,7 @@
 
         <div class="field-row">
             <label for="age">age:</label>
-            <input type="number" id="age" name="age">
+            <input type="number" id="age" name="age" onkeypress="numbersOnly(event)">
         </div>
 
         <fieldset>
@@ -29,17 +29,17 @@
 
         <div class="field-row">
             <label for="psychometric">Psychometric Grade:</label>
-            <input type="number" id="psychometric" name="psychometric">
+            <input type="number" id="psychometric" name="psychometric" onkeypress="numbersOnly(event)">
         </div>
 
         <div class="field-row">
             <label for="bagrut">Bagrut Grade:</label>
-            <input type="number" id="bagrut" name="bagrut">
+            <input type="number" id="bagrut" name="bagrut" onkeypress="numbersOnly(event)">
         </div>
 
         <div class="field-row">
             <label for="mechina">Mechina Grade:</label>
-            <input type="number" id="mechina" name="mechina">
+            <input type="number" id="mechina" name="mechina" onkeypress="numbersOnly(event)">
         </div>
 
         <button type="button" onclick="validateForm()">validate</button>

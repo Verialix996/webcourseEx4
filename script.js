@@ -1,3 +1,10 @@
+function numbersOnly(event) {
+    var char = String.fromCharCode(event.charCode);
+    if (!/[0-9]/.test(char)) {
+        event.preventDefault();
+    }
+}
+
 function handleOptionChange(value) {
     var psychometric = document.getElementById("psychometric");
     var mechina = document.getElementById("mechina");
@@ -20,6 +27,7 @@ function validateForm() {
 
     result.textContent = "";
     result.className = "";
+    result.style.backgroundColor = "";
 
     if (bagrut === "") {
         alert("You should enter a bagrut grade");
@@ -29,5 +37,6 @@ function validateForm() {
     if (parseInt(age) > 30) {
         result.textContent = "You are eligible for admission to any faculty you choose";
         result.className = "green";
+        result.style.backgroundColor = "greenyellow";
     }
 }
