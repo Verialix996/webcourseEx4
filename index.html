@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admissions Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <h2>Colledge Admissions Calculator</h2>
+
+        <div class="field-row">
+            <label for="age">age:</label>
+            <input type="number" id="age" name="age">
+        </div>
+
+        <fieldset>
+            <legend>Select from the below options:</legend>
+            <label>
+                <input type="radio" name="option" value="psychometric_bagrut" onchange="handleOptionChange(this.value)">
+                Psychometric and Bagrut
+            </label>
+            <label>
+                <input type="radio" name="option" value="mechina_bagrut" onchange="handleOptionChange(this.value)">
+                Mechina and Bagrut
+            </label>
+        </fieldset>
+
+        <div class="field-row">
+            <label for="psychometric">Psychometric Grade:</label>
+            <input type="number" id="psychometric" name="psychometric">
+        </div>
+
+        <div class="field-row">
+            <label for="bagrut">Bagrut Grade:</label>
+            <input type="number" id="bagrut" name="bagrut">
+        </div>
+
+        <div class="field-row">
+            <label for="mechina">Mechina Grade:</label>
+            <input type="number" id="mechina" name="mechina">
+        </div>
+
+        <button type="button" onclick="validateForm()">validate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
